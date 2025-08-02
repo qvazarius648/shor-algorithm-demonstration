@@ -2,7 +2,7 @@
 
 This repository contains a Python and Qiskit implementation of the quantum core of Shor's algorithm. The project serves as a portfolio piece to demonstrate a deep understanding of the algorithm's mechanics, specifically for the illustrative case of factoring **N=15** with a base of **a=7**.
 
-The implementation closely follows the modern, structured approach of explaining Shor's algorithm via **Quantum Phase Estimation (QPE)**, as detailed in the [Qiskit Textbook](https://qiskit.org/learn/course/fundamentals-of-quantum-algorithms/shors-algorithm) and the canonical textbook "Quantum Computation and Quantum Information" by Nielsen & Chuang.
+The implementation closely follows the modern, structured approach of explaining Shor's algorithm via **Quantum Phase Estimation (QPE)**, as detailed in the [Qiskit Textbook](https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/phase-estimation-and-factoring/shor-algorithm) and the canonical textbook "Quantum Computation and Quantum Information" by Nielsen & Chuang.
 
 ![Grover Search Results](result_plot.png) 
 *Note: You should replace this with a real screenshot of your generated histogram.*
