@@ -4,8 +4,7 @@ This repository contains a Python and Qiskit implementation of the quantum core 
 
 The implementation closely follows the modern, structured approach of explaining Shor's algorithm via **Quantum Phase Estimation (QPE)**, as detailed in the [Qiskit Textbook](https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/phase-estimation-and-factoring/shor-algorithm) and the canonical textbook "Quantum Computation and Quantum Information" by Nielsen & Chuang.
 
-![Grover Search Results](result_plot.png) 
-*Note: You should replace this with a real screenshot of your generated histogram.*
+
 
 ---
 
@@ -16,6 +15,29 @@ The genius of Shor's algorithm lies in converting the classically hard problem o
 `f(x) = a^x mod N`
 
 The quantum part of the algorithm uses QPE to determine this period. QPE is a general-purpose quantum algorithm that finds the phase `φ` associated with an eigenvector of a unitary operator `U`. For Shor's algorithm, this phase is directly related to the period by `φ = s/r`, where `s` is an integer. Once `r` is found, classical post-processing can efficiently calculate the factors of `N`.
+
+
+![Shor algorithm result](images/qperesult.png) 
+
+The histogram above shows the measurement outcomes from the QPE's counting register. The sharp peaks at specific values are the "answer" from the quantum computer, and they directly encode the period `r` we are looking for.
+
+The connection between the measured integer `c` and the period `r` is given by the core relationship in QPE:
+
+`c / 2^k ≈ φ = s / r`
+
+where:
+- `c` is the integer value of the measured bitstring.
+- `k` is the number of qubits in the counting register (in our case, 8).
+- `φ` is the phase of an eigenvector of the operator `U`.
+- `s / r` is the fractional representation of that phase, with `r` being the period.
+
+For our simulation with `k=8` (`2^8 = 256`), the most prominent peaks correspond to:
+
+- **`01000000` (Integer 64):** This gives a phase of `64 / 256 = 0.25`. As a fraction, this is **1/4**.
+- **`10000000` (Integer 128):** This gives a phase of `128 / 256 = 0.5`. As a fraction, this is **2/4**.
+- **`11000000` (Integer 192):** This gives a phase of `192 / 256 = 0.75`. As a fraction, this is **3/4**.
+
+As the results show, every significant measurement outcome points to a fraction with a denominator of **r = 4**. This demonstrates that the QPE circuit successfully extracted the period of the unitary operator, providing the crucial piece of information needed for the classical part of Shor's algorithm to calculate the final factors.
 
 ---
 
