@@ -10,7 +10,7 @@ The implementation closely follows the modern, structured approach of explaining
 
 ## Core Concept: From Factoring to Period-Finding
 
-The genius of Shor's algorithm lies in converting the classically hard problem of factoring an integer `N` into the quantumly efficient problem of finding the period `r` of the function:
+The idea of Shor's algorithm lies in converting the classically hard problem of factoring an integer `N` into the quantumly efficient problem of finding the period `r` of the function:
 
 `f(x) = a^x mod N`
 
