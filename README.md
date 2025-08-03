@@ -62,7 +62,7 @@ To run this project, you'll need Python 3. It's highly recommended to use a virt
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/qvazarius648/shor-algorithm-demonstration.git](https://github.com/qvazarius648/shor-algorithm-demonstration.git)
+    git clone https://github.com/qvazarius648/shor-algorithm-demonstration.git
     cd shor-algorithm-demonstration
     ```
 
@@ -78,8 +78,6 @@ To run this project, you'll need Python 3. It's highly recommended to use a virt
     ```
 
 3.  **Install the required dependencies:**
-4.  
-    Then, install from the file:
     ```bash
     pip install -r requirements.txt
     ```
