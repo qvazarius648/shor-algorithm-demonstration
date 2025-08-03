@@ -62,8 +62,8 @@ To run this project, you'll need Python 3. It's highly recommended to use a virt
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://your-repository-url.git](https://your-repository-url.git)
-    cd your-project-directory
+    git clone [https://github.com/qvazarius648/shor-algorithm-demonstration.git](https://github.com/qvazarius648/shor-algorithm-demonstration.git)
+    cd shor-algorithm-demonstration
     ```
 
 2.  **Create and activate a virtual environment:**
@@ -78,10 +78,7 @@ To run this project, you'll need Python 3. It's highly recommended to use a virt
     ```
 
 3.  **Install the required dependencies:**
-    The `requirements.txt` file can be generated from your environment using:
-    ```bash
-    pip freeze > requirements.txt
-    ```
+4.  
     Then, install from the file:
     ```bash
     pip install -r requirements.txt
@@ -91,7 +88,7 @@ To run this project, you'll need Python 3. It's highly recommended to use a virt
 
 ## Usage
 
-This project is structured as a Jupyter Notebook (`groverssearch.ipynb`) for interactive execution.
+This project is structured as a Jupyter Notebook (`shorsalgorithm.ipynb`) for interactive execution.
 
 1.  **Launch Jupyter:**
     After installing the dependencies, launch Jupyter from your terminal:
@@ -102,9 +99,6 @@ This project is structured as a Jupyter Notebook (`groverssearch.ipynb`) for int
 
 2.  **Open and Run the Notebook:**
     Navigate to the project directory and click on the `.ipynb` file to open it. You can run the entire notebook by selecting "Cell" -> "Run All" or execute each cell individually with `Shift + Enter`.
-
-3.  **Modify Parameters:**
-    The parameters `N`, `a`, and `n_counting` can be modified in the `main()` function cell to experiment with the algorithm.
 
 ---
 
