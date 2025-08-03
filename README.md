@@ -31,7 +31,7 @@ where:
 - `φ` is the phase of an eigenvector of the operator `U`.
 - `s / r` is the fractional representation of that phase, with `r` being the period.
 
-For our simulation with `k=8` (`2^8 = 256`), the most prominent peaks correspond to:
+For our simulation with `k=8` (`2^8 = 256`), the measurement results correspond to:
 
 - **`01000000` (Integer 64):** This gives a phase of `64 / 256 = 0.25`. As a fraction, this is **1/4**.
 - **`10000000` (Integer 128):** This gives a phase of `128 / 256 = 0.5`. As a fraction, this is **2/4**.
