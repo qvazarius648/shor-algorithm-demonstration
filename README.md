@@ -17,7 +17,7 @@ The genius of Shor's algorithm lies in converting the classically hard problem o
 The quantum part of the algorithm uses QPE to determine this period. QPE is a general-purpose quantum algorithm that finds the phase `φ` associated with an eigenvector of a unitary operator `U`. For Shor's algorithm, this phase is directly related to the period by `φ = s/r`, where `s` is an integer. Once `r` is found, classical post-processing can efficiently calculate the factors of `N`.
 
 
-![Shor algorithm result](images/qperesult.png) 
+![Shor algorithm result](images/qperesults.png) 
 
 The histogram above shows the measurement outcomes from the QPE's counting register. The sharp peaks at specific values are the "answer" from the quantum computer, and they directly encode the period `r` we are looking for.
 
